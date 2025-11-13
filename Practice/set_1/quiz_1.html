@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS1011 Python Programming Quiz</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #2d2d2d;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #b392f0;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #b392f0;
+            padding-bottom: 10px;
+        }
+        .question {
+            background-color: #333;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #b392f0;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #b392f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .btn:hover {
+            background: #8e44ad;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #4CAF50;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .correct {
+            background-color: #1a4d2e;
+            border-left-color: #4CAF50;
+        }
+        .incorrect {
+            background-color: #4d1a1a;
+            border-left-color: #f44336;
+        }
+        .feedback {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .feedback.correct-feedback {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .feedback.incorrect-feedback {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-code"></i> CS1011 Python Programming Quiz</h1>
+        <div class="question">
+            <p>1. Which of the following is NOT a valid variable name in Python?</p>
+            <input type="radio" name="q1" value="A"> A. student_age<br>
+            <input type="radio" name="q1" value="B"> B. _temperature<br>
+            <input type="radio" name="q1" value="C"> C. 2nd_value<br>
+            <input type="radio" name="q1" value="D"> D. myVariable<br>
+        </div>
+        <div class="question">
+            <p>2. What will this code output?<br><code>x = 10<br>y = x % 3<br>print(y)</code></p>
+            <input type="radio" name="q2" value="A"> A. 3<br>
+            <input type="radio" name="q2" value="B"> B. 1<br>
+            <input type="radio" name="q2" value="C"> C. 3.33<br>
+            <input type="radio" name="q2" value="D"> D. 0<br>
+        </div>
+        <div class="question">
+            <p>3. In the Software Development Process, which phase comes immediately after "Create a Design"?</p>
+            <input type="radio" name="q3" value="A"> A. Test/Debug the Program<br>
+            <input type="radio" name="q3" value="B"> B. Analyze the Problem<br>
+            <input type="radio" name="q3" value="C"> C. Implement the Design<br>
+            <input type="radio" name="q3" value="D"> D. Determine Specifications<br>
+        </div>
+        <div class="question">
+            <p>4. What data type does the input() function return?</p>
+            <input type="radio" name="q4" value="A"> A. Integer<br>
+            <input type="radio" name="q4" value="B"> B. Float<br>
+            <input type="radio" name="q4" value="C"> C. String<br>
+            <input type="radio" name="q4" value="D"> D. Boolean<br>
+        </div>
+        <div class="question">
+            <p>5. Which of the following is a valid constant name according to Python naming conventions?</p>
+            <input type="radio" name="q5" value="A"> A. max_value<br>
+            <input type="radio" name="q5" value="B"> B. MAX-VALUE<br>
+            <input type="radio" name="q5" value="C"> C. MAX_VALUE<br>
+            <input type="radio" name="q5" value="D"> D. 1MAX_VALUE<br>
+        </div>
+        <div class="question">
+            <p>6. What is the result of: print("5" + "7")?</p>
+            <input type="radio" name="q6" value="A"> A. 12<br>
+            <input type="radio" name="q6" value="B"> B. 57<br>
+            <input type="radio" name="q6" value="C"> C. "12"<br>
+            <input type="radio" name="q6" value="D"> D. Error<br>
+        </div>
+        <div class="question">
+            <p>7. Which operator is used for exponentiation in Python?</p>
+            <input type="radio" name="q7" value="A"> A. ^<br>
+            <input type="radio" name="q7" value="B"> B. **<br>
+            <input type="radio" name="q7" value="C"> C. ^^<br>
+            <input type="radio" name="q7" value="D"> D. pow<br>
+        </div>
+        <div class="question">
+            <p>8. What is pseudocode?</p>
+            <input type="radio" name="q8" value="A"> A. Code written in Python<br>
+            <input type="radio" name="q8" value="B"> B. Precise English describing program steps<br>
+            <input type="radio" name="q8" value="C"> C. Code with syntax errors<br>
+            <input type="radio" name="q8" value="D"> D. Commented code<br>
+        </div>
+        <div class="question">
+            <p>9. To convert user input "25" to an integer, which function should you use?</p>
+            <input type="radio" name="q9" value="A"> A. str()<br>
+            <input type="radio" name="q9" value="B"> B. float()<br>
+            <input type="radio" name="q9" value="C"> C. int()<br>
+            <input type="radio" name="q9" value="D"> D. convert()<br>
+        </div>
+        <div class="question">
+            <p>10. According to the lecture, what is the formula to convert Celsius to Fahrenheit?</p>
+            <input type="radio" name="q10" value="A"> A. F = 5/9(C) + 32<br>
+            <input type="radio" name="q10" value="B"> B. F = 9/5(C) + 32<br>
+            <input type="radio" name="q10" value="C"> C. F = C * 1.8<br>
+            <input type="radio" name="q10" value="D"> D. F = (C + 32) * 9/5<br>
+        </div>
+        <button class="btn" onclick="checkAnswers()">Submit Answers</button>
+        <p class="result" id="result"></p>
+    </div>
+    <script>
+        function checkAnswers() {
+            let answers = { q1: "C", q2: "B", q3: "C", q4: "C", q5: "C", q6: "B", q7: "B", q8: "B", q9: "C", q10: "B" };
+            let explanations = {
+                q1: "Variable names cannot start with a number. '2nd_value' is invalid.",
+                q2: "10 % 3 gives the remainder of 10 divided by 3, which is 1.",
+                q3: "After creating a design, the next step is to Implement the Design by writing code.",
+                q4: "The input() function always returns a String, even if the user enters numbers.",
+                q5: "Constants should be in ALL_CAPS with underscores. 'MAX_VALUE' is correct.",
+                q6: "When you add two strings with +, they concatenate. '5' + '7' = '57'.",
+                q7: "Python uses ** for exponentiation (e.g., 3**2 = 9).",
+                q8: "Pseudocode is precise English that describes program steps, not actual code.",
+                q9: "The int() function converts a string to an integer.",
+                q10: "The formula is F = 9/5(C) + 32 or F = (C * 9/5) + 32."
+            };
+            
+            let score = 0;
+            let total = Object.keys(answers).length;
+            
+            // Remove previous feedback
+            document.querySelectorAll('.feedback').forEach(el => el.remove());
+            document.querySelectorAll('.question').forEach(el => {
+                el.classList.remove('correct', 'incorrect');
+            });
+            
+            for (let key in answers) {
+                let selected = document.querySelector(`input[name="${key}"]:checked`);
+                let questionDiv = document.querySelector(`input[name="${key}"]`).closest('.question');
+                let feedback = document.createElement('div');
+                feedback.className = 'feedback';
+                
+                if (selected && selected.value === answers[key]) {
+                    score++;
+                    questionDiv.classList.add('correct');
+                    feedback.classList.add('correct-feedback');
+                    feedback.innerHTML = '<i class="fas fa-check-circle"></i> Correct!';
+                } else {
+                    questionDiv.classList.add('incorrect');
+                    feedback.classList.add('incorrect-feedback');
+                    let correctAnswer = answers[key];
+                    feedback.innerHTML = `<i class="fas fa-times-circle"></i> Incorrect! Correct answer: ${correctAnswer}<br><small>${explanations[key]}</small>`;
+                }
+                
+                questionDiv.appendChild(feedback);
+            }
+            
+            let percentage = Math.round((score / total) * 100);
+            let resultText = `Your score: ${score} out of ${total} (${percentage}%)`;
+            
+            if (percentage >= 80) {
+                resultText += " - Excellent! 🎉";
+            } else if (percentage >= 60) {
+                resultText += " - Good job! 👍";
+            } else {
+                resultText += " - Keep studying! 📚";
+            }
+            
+            document.getElementById("result").innerText = resultText;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
