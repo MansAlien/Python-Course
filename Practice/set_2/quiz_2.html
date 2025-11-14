@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS1011 Lecture 2 Quiz - Variables & Control Flow</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #2d2d2d;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #b392f0;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #b392f0;
+            padding-bottom: 10px;
+        }
+        .question {
+            background-color: #333;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #b392f0;
+        }
+        .question code {
+            background-color: #1a1a1a;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #b392f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .btn:hover {
+            background: #8e44ad;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #4CAF50;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .correct {
+            background-color: #1a4d2e;
+            border-left-color: #4CAF50;
+        }
+        .incorrect {
+            background-color: #4d1a1a;
+            border-left-color: #f44336;
+        }
+        .feedback {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .feedback.correct-feedback {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .feedback.incorrect-feedback {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-code-branch"></i> Lecture 2: Variables & Control Flow Quiz</h1>
+        
+        <div class="question">
+            <p>1. Which of the following is a valid variable name in Python?</p>
+            <input type="radio" name="q1" value="A"> A. 1st_name<br>
+            <input type="radio" name="q1" value="B"> B. my-variable<br>
+            <input type="radio" name="q1" value="C"> C. _student_age<br>
+            <input type="radio" name="q1" value="D"> D. sum&avg<br>
+        </div>
+
+        <div class="question">
+            <p>2. What is the result of <code>15 % 4</code>?</p>
+            <input type="radio" name="q2" value="A"> A. 3<br>
+            <input type="radio" name="q2" value="B"> B. 3.75<br>
+            <input type="radio" name="q2" value="C"> C. 4<br>
+            <input type="radio" name="q2" value="D"> D. 15<br>
+        </div>
+
+        <div class="question">
+            <p>3. What does the comparison operator <code>!=</code> mean?</p>
+            <input type="radio" name="q3" value="A"> A. Equal to<br>
+            <input type="radio" name="q3" value="B"> B. Not equal to<br>
+            <input type="radio" name="q3" value="C"> C. Greater than<br>
+            <input type="radio" name="q3" value="D"> D. Less than<br>
+        </div>
+
+        <div class="question">
+            <p>4. What is the result of <code>(5 > 3) and (10 < 8)</code>?</p>
+            <input type="radio" name="q4" value="A"> A. True<br>
+            <input type="radio" name="q4" value="B"> B. False<br>
+            <input type="radio" name="q4" value="C"> C. Error<br>
+            <input type="radio" name="q4" value="D"> D. None<br>
+        </div>
+
+        <div class="question">
+            <p>5. What is the result of <code>(8 == 8) or (5 > 10)</code>?</p>
+            <input type="radio" name="q5" value="A"> A. True<br>
+            <input type="radio" name="q5" value="B"> B. False<br>
+            <input type="radio" name="q5" value="C"> C. Error<br>
+            <input type="radio" name="q5" value="D"> D. None<br>
+        </div>
+
+        <div class="question">
+            <p>6. What is the result of <code>16 - 2 * 5</code>?</p>
+            <input type="radio" name="q6" value="A"> A. 70<br>
+            <input type="radio" name="q6" value="B"> B. 6<br>
+            <input type="radio" name="q6" value="C"> C. 14<br>
+            <input type="radio" name="q6" value="D"> D. 26<br>
+        </div>
+
+        <div class="question">
+            <p>7. In Python, what is used to group code inside an if statement?</p>
+            <input type="radio" name="q7" value="A"> A. Curly braces { }<br>
+            <input type="radio" name="q7" value="B"> B. Parentheses ( )<br>
+            <input type="radio" name="q7" value="C"> C. Indentation<br>
+            <input type="radio" name="q7" value="D"> D. Square brackets [ ]<br>
+        </div>
+
+        <div class="question">
+            <p>8. What will this code print if <code>age = 15</code>?<br>
+            <code>if age >= 18:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("Adult")<br>
+            else:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("Minor")</code></p>
+            <input type="radio" name="q8" value="A"> A. Adult<br>
+            <input type="radio" name="q8" value="B"> B. Minor<br>
+            <input type="radio" name="q8" value="C"> C. Both Adult and Minor<br>
+            <input type="radio" name="q8" value="D"> D. Nothing<br>
+        </div>
+
+        <div class="question">
+            <p>9. Which statement is used to check multiple conditions where only ONE will execute?</p>
+            <input type="radio" name="q9" value="A"> A. Multiple if statements<br>
+            <input type="radio" name="q9" value="B"> B. if-elif-else<br>
+            <input type="radio" name="q9" value="C"> C. Nested if statements<br>
+            <input type="radio" name="q9" value="D"> D. switch statement<br>
+        </div>
+
+        <div class="question">
+            <p>10. What is the result of <code>not(5 < 10)</code>?</p>
+            <input type="radio" name="q10" value="A"> A. True<br>
+            <input type="radio" name="q10" value="B"> B. False<br>
+            <input type="radio" name="q10" value="C"> C. 5<br>
+            <input type="radio" name="q10" value="D"> D. 10<br>
+        </div>
+
+        <div class="question">
+            <p>11. What makes a variable name "mnemonic"?</p>
+            <input type="radio" name="q11" value="A"> A. It starts with an underscore<br>
+            <input type="radio" name="q11" value="B"> B. It's in all capital letters<br>
+            <input type="radio" name="q11" value="C"> C. It helps you remember what it stores<br>
+            <input type="radio" name="q11" value="D"> D. It contains numbers<br>
+        </div>
+
+        <div class="question">
+            <p>12. What will this code print if <code>score = 85</code>?<br>
+            <code>if score >= 90:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("A")<br>
+            elif score >= 80:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("B")<br>
+            else:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("C")</code></p>
+            <input type="radio" name="q12" value="A"> A. A<br>
+            <input type="radio" name="q12" value="B"> B. B<br>
+            <input type="radio" name="q12" value="C"> C. C<br>
+            <input type="radio" name="q12" value="D"> D. Nothing<br>
+        </div>
+
+        <div class="question">
+            <p>13. What is the result of <code>2 ** 3</code>?</p>
+            <input type="radio" name="q13" value="A"> A. 5<br>
+            <input type="radio" name="q13" value="B"> B. 6<br>
+            <input type="radio" name="q13" value="C"> C. 8<br>
+            <input type="radio" name="q13" value="D"> D. 9<br>
+        </div>
+
+        <div class="question">
+            <p>14. Are variable names <code>Age</code>, <code>age</code>, and <code>AGE</code> the same in Python?</p>
+            <input type="radio" name="q14" value="A"> A. Yes, they are the same<br>
+            <input type="radio" name="q14" value="B"> B. No, they are different variables<br>
+            <input type="radio" name="q14" value="C"> C. Only Age and age are the same<br>
+            <input type="radio" name="q14" value="D"> D. It depends on the Python version<br>
+        </div>
+
+        <div class="question">
+            <p>15. What will this code print?<br>
+            <code>x = 10<br>
+            if x > 5:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("Big")<br>
+            if x > 8:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("Huge")</code></p>
+            <input type="radio" name="q15" value="A"> A. Big<br>
+            <input type="radio" name="q15" value="B"> B. Huge<br>
+            <input type="radio" name="q15" value="C"> C. Big and Huge (both)<br>
+            <input type="radio" name="q15" value="D"> D. Nothing<br>
+        </div>
+
+        <button class="btn" onclick="checkAnswers()">Submit Answers</button>
+        <p class="result" id="result"></p>
+    </div>
+    
+    <script>
+        function checkAnswers() {
+            let answers = { 
+                q1: "C", q2: "A", q3: "B", q4: "B", q5: "A", 
+                q6: "B", q7: "C", q8: "B", q9: "B", q10: "B",
+                q11: "C", q12: "B", q13: "C", q14: "B", q15: "C"
+            };
+            
+            let explanations = {
+                q1: "_student_age is valid. Variables can start with underscore and contain letters/numbers.",
+                q2: "15 % 4 = 3 because 15 ÷ 4 = 3 remainder 3. The % operator returns the remainder.",
+                q3: "!= means 'not equal to'. It returns True when values are different.",
+                q4: "False. The 'and' operator requires BOTH conditions to be True. (5>3) is True but (10<8) is False.",
+                q5: "True. The 'or' operator needs at least ONE condition to be True. (8==8) is True, so result is True.",
+                q6: "6. Multiplication happens first: 2*5=10, then subtraction: 16-10=6.",
+                q7: "Python uses indentation (spaces/tabs) to group code blocks, not braces like other languages.",
+                q8: "Minor. Since age (15) is less than 18, the condition is False, so the else block executes.",
+                q9: "if-elif-else checks conditions in order and only executes the first True condition.",
+                q10: "False. (5<10) is True, and not(True) = False. The 'not' operator flips the boolean value.",
+                q11: "Mnemonic means 'memory aid' - names that help you remember what data is stored (like 'hours' instead of 'x').",
+                q12: "B. Score 85 fails first condition (>=90) but passes second condition (>=80), so 'B' is printed.",
+                q13: "8. The ** operator is exponentiation: 2**3 = 2×2×2 = 8.",
+                q14: "No, they are different. Python is case-sensitive, so Age, age, and AGE are three separate variables.",
+                q15: "Both 'Big' and 'Huge'. These are TWO separate if statements (not elif), so both conditions are checked and both print."
+            };
+            
+            let score = 0;
+            let total = Object.keys(answers).length;
+            
+            // Remove previous feedback
+            document.querySelectorAll('.feedback').forEach(el => el.remove());
+            document.querySelectorAll('.question').forEach(el => {
+                el.classList.remove('correct', 'incorrect');
+            });
+            
+            for (let key in answers) {
+                let selected = document.querySelector(`input[name="${key}"]:checked`);
+                let questionDiv = document.querySelector(`input[name="${key}"]`).closest('.question');
+                let feedback = document.createElement('div');
+                feedback.className = 'feedback';
+                
+                if (selected && selected.value === answers[key]) {
+                    score++;
+                    questionDiv.classList.add('correct');
+                    feedback.classList.add('correct-feedback');
+                    feedback.innerHTML = '<i class="fas fa-check-circle"></i> Correct!';
+                } else {
+                    questionDiv.classList.add('incorrect');
+                    feedback.classList.add('incorrect-feedback');
+                    let correctAnswer = answers[key];
+                    feedback.innerHTML = `<i class="fas fa-times-circle"></i> Incorrect! Correct answer: ${correctAnswer}<br><small>${explanations[key]}</small>`;
+                }
+                
+                questionDiv.appendChild(feedback);
+            }
+            
+            let percentage = Math.round((score / total) * 100);
+            let resultText = `Your score: ${score} out of ${total} (${percentage}%)`;
+            
+            if (percentage >= 80) {
+                resultText += " - Excellent! 🎉";
+            } else if (percentage >= 60) {
+                resultText += " - Good job! 👍";
+            } else {
+                resultText += " - Keep studying! 📚";
+            }
+            
+            document.getElementById("result").innerText = resultText;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
